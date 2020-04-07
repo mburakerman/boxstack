@@ -85,7 +85,7 @@ function startGame() {
                 return;
             }
             // decreace game width if user can't fit box as the current width
-            if (activeGameIndex != currentGameLevel.index || (activeGameIndex - 1 != currentGameLevel.index)) {
+            if (activeGameIndex != currentGameLevel.index) {
                 currentGameLevel.width--;
                 if (currentGameLevel.width < 1) {
                     gameOver();
